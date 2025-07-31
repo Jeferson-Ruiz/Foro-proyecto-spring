@@ -16,7 +16,7 @@ import com.jr.forohud.challenge.dto.CursoResgistroDto;
 import com.jr.forohud.challenge.service.CursoService;
 
 @RestController
-@RequestMapping("curso")
+@RequestMapping("/curso")
 public class CursoController {
 
     @Autowired

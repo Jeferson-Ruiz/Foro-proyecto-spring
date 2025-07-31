@@ -1,5 +1,6 @@
 package com.jr.forohud.challenge.models;
 
+import org.springframework.security.core.GrantedAuthority;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,10 +15,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name = "perfiles")
-public class Perfil {
+public class Perfil implements GrantedAuthority{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
+
+    @Override
+    public String getAuthority() {
+        return "ROLE_"+nombre;
+    }
 }

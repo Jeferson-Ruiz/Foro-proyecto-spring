@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.jr.forohud.challenge.dto.DatosAutentificacionDto;
+import com.jr.forohud.challenge.dto.DatosTokenDto;
 import com.jr.forohud.challenge.models.Usuario;
 import com.jr.forohud.challenge.security.TokenService;
 

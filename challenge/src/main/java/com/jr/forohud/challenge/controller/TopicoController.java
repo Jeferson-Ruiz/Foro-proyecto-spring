@@ -19,7 +19,7 @@ import com.jr.forohud.challenge.service.TopicoService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("topicos")
+@RequestMapping("/topicos")
 public class TopicoController {
 
     @Autowired
